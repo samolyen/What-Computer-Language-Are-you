@@ -1,0 +1,95 @@
+<!DOCTYPE html> <html><head>
+        <title> "What Computer Language Are you?" </title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet">
+    <style>body {
+    font-family: 'Oswald', Impact;
+    background-color: #00ff00;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}
+
+.gifone{
+    display:none;
+}
+
+.giftwo{
+    display:none;
+}
+
+.gifthree{
+    display:none;
+}
+
+.giffour{
+    display:none;
+}
+</style></head>
+    <body>
+        <div class="title">
+            <h1>WHAT COMPUTER LANGUAGE ARE YOU?</h1>
+
+
+        </div>
+        <div class="questions">
+            <h4>How do you feel about life in general </h4>
+            <input class="feelings" placeholder="Choose a number from 1-10">
+
+            <img src="https://img.freepik.com/premium-vector/emoji-icons-isolated-vector-illustration-level-satisfaction-rating-concept-review-feedback-survey-opinion-service-sad-happy-mood-icons-eps-10_158224-151.jpg" alt="a scale from 1-10 with sad to smiley faces">
+
+
+            <h4>Whats your favorite Desert?</h4>
+            <input class="dessert" placeholder="Choose a desert">
+            <img src="https://nuvomagazine.com/wp-content/uploads/2016/08/Sweets_AliceClair_July15CROP.jpg">
+        </div>
+
+        <div class="result">
+            <div class="buttonsone">
+                <button class="buttonsone"> ~ Submit! ~ </button>
+            </div>
+
+            this is where the user will see their quiz result!
+        </div>
+
+        <img class="gifone" alt="a mad panda" src="https://media.tenor.com/NWtsAKh6jncAAAAM/me-after-learning-javascript-for-six-hours.gif">
+        <img class="giftwo" alt="a dog with sunglasses typing" src="https://media2.giphy.com/media/Dh5q0sShxgp13DwrvG/giphy.gif">
+        <img class="gifthree" alt="cartoon character opening and closing a window sill" src="https://media4.giphy.com/media/13FrpeVH09Zrb2/giphy.gif">
+        <img class="giffour" alt="cartoon character gleefully smiling" src="https://media1.giphy.com/media/13k4VSc3ngLPUY/giphy.gif?cid=6c09b952kkr7ga6ahlnfw2pswf4lvqg3m4k1w1eyvw3ia40x&amp;ep=v1_internal_gif_by_id&amp;rid=giphy.gif&amp;ct=g">
+             
+        
+
+
+
+
+    
+
+<script>
+/*__POPCODESTART__*/
+var title = document.querySelector(".title");
+var questions = document.querySelector(".questions");
+var result = document.querySelector(".result");
+var buttonsone = document.querySelector(".buttonsone");
+
+buttonsone.onclick = function () {
+  var feelings = document.querySelector(".feelings").value;
+  console.log(feelings);
+  var dessert = document.querySelector(".dessert").value;
+  console.log(dessert);
+
+  if (feelings <= 3 && dessert <= 6) {
+    document.querySelector(".result").innerHTML = "You are JAVA SCRIPT, you may not be in the happiest moods seeing your results (" + feelings + "). However Java Script Makes you feel like that so its okay. You use " + dessert + "To keep you energized to push on with java script!";
+    document.querySelector(".gifone").style.display = "block";
+  } else if (feelings <= 6 && dessert <= 12) {
+    document.querySelector(".result").innerHTML = "YOU are HTML SCRIPT, you have a more serious demeanor considering your score (" + feelings + "). You may also eat quick and small which is why you feel so inclined to " + dessert + " however your still hardworking and want to push on in HTML";
+    document.querySelector(".giftwo").style.display = "block";
+  } else if (feelings <= 9 && dessert <= 18) {
+    document.querySelector(".result").innerHTML = "YOU are CSS SCRIPT!, you have a happy and creative outlook on life and are always in a good mood (" + feelings + "). Even though you chose " + dessert + "you love all things desserts which either comes from indeciveness (just like your css script) or love of all things";
+    document.querySelector(".gifthree").style.display = "block";
+  } else if (feelings <= 10 && dessert <= 24) {
+    document.querySelector(".result").innerHTML = "YOU are able to control all things Script. WOW your pretty cool you have a nice time when you code (not many of us do) and keep a happy mood (" + 10 + "). you can take your time when coding to enjoy other things like desserts which is why you chose" + dessert + "coding is fun to you and you get a kick out of doing everything yourself";
+    document.querySelector(".giffour").style.display = "block";
+  } else if (feelings === " " && dessert <= 1) {}
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbInRpdGxlIiwiZG9jdW1lbnQiLCJxdWVyeVNlbGVjdG9yIiwicXVlc3Rpb25zIiwicmVzdWx0IiwiYnV0dG9uc29uZSIsIm9uY2xpY2siLCJmZWVsaW5ncyIsInZhbHVlIiwiY29uc29sZSIsImxvZyIsImRlc3NlcnQiLCJpbm5lckhUTUwiLCJzdHlsZSIsImRpc3BsYXkiXSwibWFwcGluZ3MiOiJBQUFBLElBQUlBLEtBQUssR0FBR0MsUUFBUSxDQUFDQyxhQUFULENBQXVCLFFBQXZCLENBQVo7QUFDQSxJQUFJQyxTQUFTLEdBQUdGLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixZQUF2QixDQUFoQjtBQUNBLElBQUlFLE1BQU0sR0FBR0gsUUFBUSxDQUFDQyxhQUFULENBQXVCLFNBQXZCLENBQWI7QUFDQSxJQUFJRyxVQUFVLEdBQUdKLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixhQUF2QixDQUFqQjs7QUFFQUcsVUFBVSxDQUFDQyxPQUFYLEdBQXFCLFlBQVc7QUFDNUIsTUFBSUMsUUFBUSxHQUNSTixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsV0FBdkIsRUFBb0NNLEtBRHhDO0FBRUFDLEVBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZSCxRQUFaO0FBR0EsTUFBSUksT0FBTyxHQUNQVixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsVUFBdkIsRUFBbUNNLEtBRHZDO0FBRUFDLEVBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZQyxPQUFaOztBQUVBLE1BQUlKLFFBQVEsSUFBSSxDQUFaLElBQWlCSSxPQUFPLElBQUksQ0FBaEMsRUFBbUM7QUFDL0JWLElBQUFBLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixTQUF2QixFQUFrQ1UsU0FBbEMsR0FBOEMsb0ZBQW9GTCxRQUFwRixHQUErRix1RUFBL0YsR0FBeUtJLE9BQXpLLEdBQW1MLG9EQUFqTztBQUNSVixJQUFBQSxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsU0FBdkIsRUFBa0NXLEtBQWxDLENBQXdDQyxPQUF4QyxHQUFnRCxPQUFoRDtBQUNLLEdBSEQsTUFHTyxJQUFJUCxRQUFRLElBQUksQ0FBWixJQUFpQkksT0FBTyxJQUFJLEVBQWhDLEVBQW9DO0FBQ3ZDVixJQUFBQSxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsU0FBdkIsRUFBa0NVLFNBQWxDLEdBQThDLG1GQUFtRkwsUUFBbkYsR0FBOEYsMkVBQTlGLEdBQTRLSSxPQUE1SyxHQUFzTCw2REFBcE87QUFDTFYsSUFBQUEsUUFBUSxDQUFDQyxhQUFULENBQXVCLFNBQXZCLEVBQWtDVyxLQUFsQyxDQUF3Q0MsT0FBeEMsR0FBZ0QsT0FBaEQ7QUFDRSxHQUhNLE1BR0EsSUFBSVAsUUFBUSxJQUFJLENBQVosSUFBaUJJLE9BQU8sSUFBSSxFQUFoQyxFQUFvQztBQUN2Q1YsSUFBQUEsUUFBUSxDQUFDQyxhQUFULENBQXVCLFNBQXZCLEVBQWtDVSxTQUFsQyxHQUE4Qyx1R0FBdUdMLFFBQXZHLEdBQWtILDJCQUFsSCxHQUFnSkksT0FBaEosR0FBMEoscUhBQXhNO0FBQ0xWLElBQUFBLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixXQUF2QixFQUFvQ1csS0FBcEMsQ0FBMENDLE9BQTFDLEdBQWtELE9BQWxEO0FBQ0UsR0FITSxNQUdBLElBQUlQLFFBQVEsSUFBSSxFQUFaLElBQWtCSSxPQUFPLElBQUksRUFBakMsRUFBcUM7QUFDeENWLElBQUFBLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixTQUF2QixFQUFrQ1UsU0FBbEMsR0FBOEMsbUpBQW1KLEVBQW5KLEdBQXdKLGtHQUF4SixHQUE2UEQsT0FBN1AsR0FBdVEsMEVBQXJUO0FBQ0pWLElBQUFBLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixVQUF2QixFQUFtQ1csS0FBbkMsQ0FBeUNDLE9BQXpDLEdBQWlELE9BQWpEO0FBQ0MsR0FITSxNQUdBLElBQUlQLFFBQVEsS0FBSyxHQUFiLElBQW9CSSxPQUFPLElBQUksQ0FBbkMsRUFBc0MsQ0FBRTtBQUtsRCxDQTNCRCIsInNvdXJjZXNDb250ZW50IjpbImxldCB0aXRsZSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIudGl0bGVcIik7XG5sZXQgcXVlc3Rpb25zID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5xdWVzdGlvbnNcIik7XG5sZXQgcmVzdWx0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXN1bHRcIik7XG5sZXQgYnV0dG9uc29uZSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuYnV0dG9uc29uZVwiKTtcblxuYnV0dG9uc29uZS5vbmNsaWNrID0gZnVuY3Rpb24oKSB7XG4gICAgbGV0IGZlZWxpbmdzID1cbiAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5mZWVsaW5nc1wiKS52YWx1ZTtcbiAgICBjb25zb2xlLmxvZyhmZWVsaW5ncyk7XG5cblxuICAgIGxldCBkZXNzZXJ0ID1cbiAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5kZXNzZXJ0XCIpLnZhbHVlO1xuICAgIGNvbnNvbGUubG9nKGRlc3NlcnQpO1xuXG4gICAgaWYgKGZlZWxpbmdzIDw9IDMgJiYgZGVzc2VydCA8PSA2KSB7XG4gICAgICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmVzdWx0XCIpLmlubmVySFRNTCA9IFwiWW91IGFyZSBKQVZBIFNDUklQVCwgeW91IG1heSBub3QgYmUgaW4gdGhlIGhhcHBpZXN0IG1vb2RzIHNlZWluZyB5b3VyIHJlc3VsdHMgKFwiICsgZmVlbGluZ3MgKyBcIikuIEhvd2V2ZXIgSmF2YSBTY3JpcHQgTWFrZXMgeW91IGZlZWwgbGlrZSB0aGF0IHNvIGl0cyBva2F5LiBZb3UgdXNlIFwiICsgZGVzc2VydCArIFwiVG8ga2VlcCB5b3UgZW5lcmdpemVkIHRvIHB1c2ggb24gd2l0aCBqYXZhIHNjcmlwdCFcIjtcbmRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuZ2lmb25lXCIpLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xuICAgIH0gZWxzZSBpZiAoZmVlbGluZ3MgPD0gNiAmJiBkZXNzZXJ0IDw9IDEyKSB7XG4gICAgICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmVzdWx0XCIpLmlubmVySFRNTCA9IFwiWU9VIGFyZSBIVE1MIFNDUklQVCwgeW91IGhhdmUgYSBtb3JlIHNlcmlvdXMgZGVtZWFub3IgY29uc2lkZXJpbmcgeW91ciBzY29yZSAoXCIgKyBmZWVsaW5ncyArIFwiKS4gWW91IG1heSBhbHNvIGVhdCBxdWljayBhbmQgc21hbGwgd2hpY2ggaXMgd2h5IHlvdSBmZWVsIHNvIGluY2xpbmVkIHRvIFwiICsgZGVzc2VydCArIFwiIGhvd2V2ZXIgeW91ciBzdGlsbCBoYXJkd29ya2luZyBhbmQgd2FudCB0byBwdXNoIG9uIGluIEhUTUxcIjtcbiAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuZ2lmdHdvXCIpLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xuICAgIH0gZWxzZSBpZiAoZmVlbGluZ3MgPD0gOSAmJiBkZXNzZXJ0IDw9IDE4KSB7XG4gICAgICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmVzdWx0XCIpLmlubmVySFRNTCA9IFwiWU9VIGFyZSBDU1MgU0NSSVBUISwgeW91IGhhdmUgYSBoYXBweSBhbmQgY3JlYXRpdmUgb3V0bG9vayBvbiBsaWZlIGFuZCBhcmUgYWx3YXlzIGluIGEgZ29vZCBtb29kIChcIiArIGZlZWxpbmdzICsgXCIpLiBFdmVuIHRob3VnaCB5b3UgY2hvc2UgXCIgKyBkZXNzZXJ0ICsgXCJ5b3UgbG92ZSBhbGwgdGhpbmdzIGRlc3NlcnRzIHdoaWNoIGVpdGhlciBjb21lcyBmcm9tIGluZGVjaXZlbmVzcyAoanVzdCBsaWtlIHlvdXIgY3NzIHNjcmlwdCkgb3IgbG92ZSBvZiBhbGwgdGhpbmdzXCI7XG4gICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmdpZnRocmVlXCIpLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xuICAgIH0gZWxzZSBpZiAoZmVlbGluZ3MgPD0gMTAgJiYgZGVzc2VydCA8PSAyNCkge1xuICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJlc3VsdFwiKS5pbm5lckhUTUwgPSBcIllPVSBhcmUgYWJsZSB0byBjb250cm9sIGFsbCB0aGluZ3MgU2NyaXB0LiBXT1cgeW91ciBwcmV0dHkgY29vbCB5b3UgaGF2ZSBhIG5pY2UgdGltZSB3aGVuIHlvdSBjb2RlIChub3QgbWFueSBvZiB1cyBkbykgYW5kIGtlZXAgYSBoYXBweSBtb29kIChcIiArIDEwICsgXCIpLiB5b3UgY2FuIHRha2UgeW91ciB0aW1lIHdoZW4gY29kaW5nIHRvIGVuam95IG90aGVyIHRoaW5ncyBsaWtlIGRlc3NlcnRzIHdoaWNoIGlzIHdoeSB5b3UgY2hvc2VcIiArIGRlc3NlcnQgKyBcImNvZGluZyBpcyBmdW4gdG8geW91IGFuZCB5b3UgZ2V0IGEga2ljayBvdXQgb2YgZG9pbmcgZXZlcnl0aGluZyB5b3Vyc2VsZlwiO1xuICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuZ2lmZm91clwiKS5zdHlsZS5kaXNwbGF5PVwiYmxvY2tcIjtcbiAgICB9IGVsc2UgaWYgKGZlZWxpbmdzID09PSBcIiBcIiAmJiBkZXNzZXJ0IDw9IDEpIHt9XG5cblxuXG5cbn07Il19</script></body></html>
