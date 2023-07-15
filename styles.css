@@ -1,0 +1,25 @@
+body {
+    font-family: 'Oswald', Impact;
+    background-color: #00ff00;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}
+
+.gifone{
+    display:none;
+}
+
+.giftwo{
+    display:none;
+}
+
+.gifthree{
+    display:none;
+}
+
+.giffour{
+    display:none;
+}
